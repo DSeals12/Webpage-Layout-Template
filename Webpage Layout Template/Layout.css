@@ -1,0 +1,104 @@
+body{
+	margin: auto 0;
+	font-family: Arial;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*viewport height makes things responsive*/
+	height: 50vh;
+}
+
+.cover{
+	width: 15rem;
+}
+
+/*GRID*/
+.grid-wrapper {
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+/*fixes images of different sizes to equal*/
+.box > img {
+	width: 100%;
+}
+
+.box {
+	background-color: #444;
+	padding: 70px;
+	margin: 30px;
+}
+
+footer {
+	text-align: center;
+}
+
+.zone{
+	cursor: pointer;
+	color: #FFF;
+	font-size: 2em;
+	border-radius: 4px;
+	border: 1px solid #bbb;
+}
+
+/*NAVBAR*/
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.main-nav{
+	display: flex;
+	list-style: none;
+	font-size: 0.7em;
+	margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+	.main-nav {
+		font-size: 0.5em;
+		padding: 0;
+	}
+}
+
+.box:hover {
+	-webkit-transform: rotate(-7deg);
+	-o-transform: rotate(-7deg);
+	-moz-transform: rotate(-7deg);
+	transform: rotate(-7deg);
+}
+
+
+.push{
+	margin-left: auto;
+}
+
+li {
+	padding: 20px;	
+}
+
+a {
+	color: #f5f5f6;
+	text-decoration: none;
+}
+
+.green{
+	background-color: #81B41C;
+}
+
+.red {
+	background-color: #BA1D2C;
+}
+
+.blue {
+	background-color: #35786F;
+}
+
+.yellow{
+	background-color: #FF7B15;
+}
